@@ -19,4 +19,4 @@ COPY --from=build /app/out .
 EXPOSE 80
 
 # Run the app
-ENTRYPOINT ["dotnet", "dotnet_server.dll"]
+ENTRYPOINT ["dotnet", "dotnet-server.dll"]
