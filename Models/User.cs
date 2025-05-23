@@ -9,13 +9,13 @@ public class User
   public string? Id { get; set; }
 
   [BsonElement("fullname")]
-  public required string Fullname { get; set; }
+  public string Fullname { get; set; } = null!;
 
   [BsonElement("email")]
-  public required string Email { get; set; }
+  public string Email { get; set; }= null!;
 
   [BsonElement("password")]
-  public required string Password { get; set; }
+  public string Password { get; set; }= null!;
 
   [BsonElement("createdAt")]
   public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
